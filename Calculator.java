@@ -18,13 +18,20 @@ public class Calculator {
         System.out.print("Enter first number: ");
         num1 = (int) scanner.nextDouble();
         System.out.println(num1);
+        System.out.println("\n");
         System.out.println("Let's see this number in different conversions");
+        System.out.println("\n");
+        System.out.println("num1 in hexadecimal value: ");
         convertToHexadecimal1(num1);
+        System.out.println("num1 in decimal value: ");
         convertToDecimal1(num1);
+        System.out.println("num1 in octal value: ");
         convertToOctal1(num1);
+        System.out.println("num1 in binary value: ");
         convertToBinary1(num1);
 
 
+        System.out.println("\n");
         System.out.print("Enter an operator (+, -, *, /, S, C): ");
         operator = scanner.next().charAt(0);
 
@@ -34,23 +41,35 @@ public class Calculator {
             System.out.print("Enter second number: ");
             num2 = (int) scanner.nextDouble();
             System.out.println(num2);
+            System.out.println("\n");
             System.out.println("Let's see this number in different conversions");
+            System.out.println("\n");
+            System.out.println("num2 in hexadecimal value: ");
             convertToHexadecimal2(num2);
+            System.out.println("num2 in decimal value: ");
             convertToDecimal2(num2);
+            System.out.println("num2 in octal value: ");
             convertToOctal2(num2);
+            System.out.println("num2 in binary value: ");
             convertToBinary2(num2);
 
+            System.out.println("\n");
             System.out.println("Bitwise Functions");
+            System.out.println("\n");
             // Bitwise "AND"
+            System.out.println("Result of num1 and num2 using Bitwise 'AND' ");
             System.out.println("num1&num2 = " + (num1 & num2));
 
 
             // Bitwise "OR"
+            System.out.println("Result of num1 and num2 using Bitwise 'OR' ");
             System.out.println("num1|num2 = " + (num1 | num2));
 
 
             // Bitwise "XOR"
+            System.out.println("Result of num1 and num2 using Bitwise 'XOR' ");
             System.out.println("num1^num2 = " + (num1 ^ num2));
+            System.out.println("\n");
 
 
         }
@@ -60,24 +79,29 @@ public class Calculator {
             case '+':
                 result = num1 + num2;
                 System.out.println("Result: " + result);
+                System.out.println("\n");
                 break;
             case '-':
                 result = num1 - num2;
                 System.out.println("Result: " + result);
+                System.out.println("\n");
                 break;
             case '*':
                 result = num1 * num2;
                 System.out.println("Result: " + result);
+                System.out.println("\n");
                 break;
             case '/':
                 if (num2 != 0) {
                     result = num1 / num2;
                     System.out.println("Result: " + result);
+                    System.out.println("\n");
                 } else {
                     System.out.println("Error: Division by zero");
+                    System.out.println("\n");
                 }
                 break;
-            //sine
+            //Sine
             case 'S':
                 num2 = (int) Math.toRadians(num1);
                 result = (int) sin(num2);
